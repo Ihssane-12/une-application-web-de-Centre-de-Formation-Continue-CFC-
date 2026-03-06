@@ -1,0 +1,10 @@
+@startuml
+start
+:Consulter catalogue;
+if (Formation ouverte?) then (oui)
+  :Postuler;
+else (non)
+  :Fermé;
+endif
+stop
+@enduml
