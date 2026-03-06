@@ -1,0 +1,2 @@
+-- Full Database Schema created automatically for CFC
+-- See conversation logs for the complete postgres schema definition.
