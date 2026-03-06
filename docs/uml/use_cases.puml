@@ -1,0 +1,10 @@
+@startuml
+actor "Super Admin" as SA
+actor "Admin d'établissement" as AE
+actor "Coordinateur" as CO
+actor "Candidat" as CA
+rectangle "Système CFC" {
+usecase "Gérer formations" as UC_AE1
+usecase "Postuler" as UC_CA1
+}
+@enduml
