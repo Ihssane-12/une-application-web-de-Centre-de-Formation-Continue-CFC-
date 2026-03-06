@@ -1,0 +1,13 @@
+@startuml
+actor Candidat
+participant Frontend
+participant Backend
+database Database
+
+Candidat -> Frontend : Postuler
+Frontend -> Backend : POST /applications
+Backend -> Database : Insert Application
+Database --> Backend : Success
+Backend --> Frontend : 201 Created
+Frontend --> Candidat : Redirection Dashboard
+@enduml
