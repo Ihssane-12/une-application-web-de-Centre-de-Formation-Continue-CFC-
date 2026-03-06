@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-gray-800 font-sans selection:bg-uni-500 selection:text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-uni-900;
+  }
+}
+
+@layer components {
+
+  /* Forms */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-uni-500 focus:border-transparent transition-all duration-300;
+  }
+
+  .label-text {
+    @apply block text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wider;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply bg-uni-500 hover:bg-uni-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-float transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-uni-500;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-uni-900 border border-gray-200 font-semibold py-3 px-6 rounded-lg shadow-sm hover:shadow transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+
+  /* Glassmorphism Classes */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-glass rounded-2xl;
+  }
+
+  .glass-nav {
+    @apply bg-uni-900/95 backdrop-blur-md border-b border-white/10 shadow-lg;
+  }
+}
