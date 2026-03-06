@@ -1,0 +1,17 @@
+@startuml
+class User {
+  - id: Long
+  - email: String
+}
+class Role {
+  - name: String
+}
+class TrainingProgram {
+  - title: String
+}
+class Establishment {
+  - name: String
+}
+User "1" -- "*" Role : has >
+Establishment "1" *-- "*" TrainingProgram : offers >
+@enduml
