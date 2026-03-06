@@ -1,0 +1,9 @@
+@startuml
+[*] --> PreRegistered
+PreRegistered --> FileSubmitted
+FileSubmitted --> UnderReview
+UnderReview --> Accepted
+UnderReview --> Rejected
+Accepted --> [*]
+Rejected --> [*]
+@enduml
